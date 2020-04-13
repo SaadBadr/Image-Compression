@@ -10,7 +10,7 @@ def main():
     encodedFile = "encoded.npy"
     # name of the file to save the probabilty 1D numpy array in it
     probabiltyFile = "probability.npy"
-    float_type = 'float64' #you can choose numpy float types as float64(default), float32, float16, and longdouble
+    float_type = 'float64' #you can choose numpy float types as float64(default and recommended), float32, float16, and longdouble
     utility.encode(block_size, imagePath, encodedFile,probabiltyFile, float_type)
 
     ########################################### DECODING ##########################################################

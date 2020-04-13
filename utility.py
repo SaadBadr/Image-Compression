@@ -21,8 +21,9 @@ def encode(block_size ,imagePath="test.jpg",encodedFile="encoded",probabilityFil
     if float_type != 'float16' and float_type != 'float32' and float_type != 'float64' and float_type != 'longdouble':
         float_type = 'float64'
 
-    prob = numpy.asarray(prob, dtype=float_type)
+    prob = numpy.asarray(prob)
     prob = numpy.true_divide(prob, len(img))
+
     for i in range(0, len(img), block_size):
         x = e.encoding(prob, img[i:(block_size + i)])
         if not(0<=x<=1):
@@ -30,7 +31,7 @@ def encode(block_size ,imagePath="test.jpg",encodedFile="encoded",probabilityFil
         codes = numpy.append(codes, [x])
     numpy.save('original.npy', img)
     print("Encoding Done:")
-    numpy.save(encodedFile, codes) # save
+    numpy.save(encodedFile, codes.astype(float_type)) # save
     print(" ->" + encodedFile + " is created")
     numpy.save(probabilityFile, prob) # save
     print(" ->" + probabilityFile + " is created\n")

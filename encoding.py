@@ -18,6 +18,7 @@ def get_range(probability, element, lower_bound=0, upper_bound=1):
     # return [LR[element], UR[element]]
     return [LR[element], UR[element]]
 
+
 def encoding(probability, sequence):
     x = get_range(probability, sequence[0])
 
