@@ -8,14 +8,11 @@ def get_range(probability, element, lower_bound=0, upper_bound=1):
     # lower ranges: LR = [ lower bound,...., LR[i-1] + d(P[i-1]) ]
     d = upper_bound - lower_bound
     for i in range(1, number):
-        # x = LR[i-1] + d*(probability[i-1])
         x = LR[i-1] + d*(probability[i-1])
         LR.append(x)
         UR.append(x)
     UR.append(upper_bound)
 
-    # index = elements.index(element)
-    # return [LR[element], UR[element]]
     return [LR[element], UR[element]]
 
 

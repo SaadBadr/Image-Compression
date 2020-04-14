@@ -14,8 +14,6 @@ def main():
     utility.encode(block_size, imagePath, encodedFile,probabiltyFile, float_type)
 
     ########################################### DECODING ##########################################################
-    # rows = 183
-    # columns = 275
     columns = 256 #Width
     rows = 256 #Hieght
     resultImage = "result2.png"

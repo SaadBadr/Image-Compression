@@ -11,9 +11,6 @@ def encode(block_size ,imagePath="test.jpg",encodedFile="encoded",probabilityFil
     codes = numpy.array([])
     probability = (collections.Counter(img))
     print("Encoding Started")
-    # for i in range(0, len(probability)):
-        # probability[i] /= len(img)
-
     prob = [None]*256
     for i in range(0,256):
         prob[i] = probability[i]
@@ -47,7 +44,6 @@ def decode(block_size, rows, columns, probability, encodedFile="encoded", result
     for i in range(0, len(codes)):
         x = d.decoding(probability, codes[i], block_size)
         img = numpy.append(img, x)
-    # img = img[:(len(img) - block_size + (rows * columns) % block_size)]
     img = img[:rows*columns]
     print("Decoding Done:")
     img = img.reshape(rows, columns)
