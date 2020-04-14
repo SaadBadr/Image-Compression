@@ -18,7 +18,7 @@ def main():
     # columns = 275
     rows = 256
     columns = 256
-    resultImage = "result.png"
+    resultImage = "result2.png"
     # name of the encoded file to be decoded
     encodedFile = "encoded.npy"
     # name of the file having the probabilty 1D numpy array

@@ -47,7 +47,8 @@ def decode(block_size, rows, columns, probability, encodedFile="encoded", result
     for i in range(0, len(codes)):
         x = d.decoding(probability, codes[i], block_size)
         img = numpy.append(img, x)
-    img = img[:(len(img) - block_size + (rows * columns) % block_size)]
+    # img = img[:(len(img) - block_size + (rows * columns) % block_size)]
+    img = img[:rows*columns]
     print("Decoding Done:")
     img = img.reshape(rows, columns)
     cv2.imwrite(resultImage, img)
