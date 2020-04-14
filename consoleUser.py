@@ -13,7 +13,7 @@ def main():
         # name of the encoded file that will be created
         encodedFile = input("output encoded file name: (e.g. encoded.npy) ")
         # name of the file to save the probability 1D numpy array in it
-        probabiltyFile = input("the output probability file name: (e.g. probability.npy) ")
+        probabiltyFile = input("output probability file name: (e.g. probability.npy) ")
         float_type = "float type: (float64 is recommended) "
     if mode == 2:
         utility.encode(block_size, imagePath, encodedFile,probabiltyFile, float_type)
