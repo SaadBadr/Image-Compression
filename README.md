@@ -1,5 +1,5 @@
-#Image Compression 
-##by Arithmatic coding
+# Image Compression
+## by Arithmatic coding
 - Author: Saad Eldeen Mohamed Mohamed
 - SEC: 1
 - BN: 28
@@ -23,7 +23,7 @@ There is three modes and the user will asked to choose one from them after runni
 2. Encode only
 3. Decode only
 ------------
-####The program input:
+#### The program input:
 ------------
 1. Encoding:
 	- Image name (e.g. test.png)
@@ -34,7 +34,7 @@ There is three modes and the user will asked to choose one from them after runni
 	- Height of the original image in pixels (e.g. 256)
 	- Output image name (e.g. result.png)
 ------------
-####The program output:
+#### The program output:
 ------------
 1. Encoding:
 	- original.npy
