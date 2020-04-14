@@ -18,7 +18,7 @@ def encode(block_size ,imagePath="test.jpg",encodedFile="encoded",probabilityFil
     for i in range(0,256):
         prob[i] = probability[i]
 
-    if float_type != 'float16' and float_type != 'float32' and float_type != 'float64' and float_type != 'longdouble':
+    if float_type != 'float16' and float_type != 'float32' and float_type != 'float64':
         float_type = 'float64'
 
     prob = numpy.asarray(prob)
