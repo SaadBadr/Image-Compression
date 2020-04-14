@@ -16,8 +16,8 @@ def main():
     ########################################### DECODING ##########################################################
     # rows = 183
     # columns = 275
-    rows = 256
-    columns = 256
+    columns = 256 #Width
+    rows = 256 #Hieght
     resultImage = "result2.png"
     # name of the encoded file to be decoded
     encodedFile = "encoded.npy"
