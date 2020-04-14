@@ -10,7 +10,7 @@ There is two options for user to use this program:
 1. Run **userConsole.py**
 	- the program will run and take the needed input from the user from console during running.
 2. Run **main.py**
-	-Before running user should enter the data manualy in **main.py** then run it.
+	- Before running user should enter the data manualy in **main.py** then run it.
 
 - **Note**: User shouldn't interact with (utility.py, encoding.py, decoding.py) files.
 
