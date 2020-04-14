@@ -1,5 +1,5 @@
 # Image Compression
-## by Arithmatic coding
+## using Arithmatic coding
 - Author: Saad Eldeen Mohamed Mohamed
 - SEC: 1
 - BN: 28
