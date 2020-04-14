@@ -7,7 +7,7 @@
 #### User interaction files:
 ------------
 There is two options for user to use this program:
-1. Run **userConsole.py**
+1. Run **consoleUser.py**
 	- The program will run and take the needed input from the user from console during running.
 2. Run **main.py**
 	- Before running user should enter the data manualy in **main.py** then run it.
@@ -16,9 +16,9 @@ There is two options for user to use this program:
 
 ------------
 
-#### **userConsole.py** modes:
+#### **consoleUser.py** modes:
 ------------
-There is three modes and the user will asked to choose one from them after running **userConsole.py**
+There is three modes and the user will asked to choose one from them after running **consoleUser.py**
 1. Encode then Decode the same files
 2. Encode only
 3. Decode only
