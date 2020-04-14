@@ -9,7 +9,7 @@ def main():
     block_size = int(input("Block Size = (4 is recommended) "))
 
     if mode != 3:
-        imagePath = input("image name: (e.g. test2.png) ")
+        imagePath = input("image name: (e.g. test.png) ")
         # name of the encoded file that will be created
         encodedFile = input("output encoded file name: (e.g. encoded.npy) ")
         # name of the file to save the probability 1D numpy array in it
@@ -23,12 +23,12 @@ def main():
     # columns = 275
     columns = int(input("number of columns (WIDTH) of the original image: (e.g. 256) "))
     rows = int(input("number of rows (HEIGHT) of the original image: (e.g. 256) "))
-    resultImage = input("output image name: (e.g. test2.png) ")
+    resultImage = input("output image name: (e.g. result.png) ")
     # name of the encoded file to be decoded
     if mode == 3:
         encodedFile = input("encoded file name: ( e.g. encoded.npy) ")
         # name of the file having the probabilty 1D numpy array
-        probabiltyFile = input("probability file name: ( e.g. encoded.npy) ")
+        probabiltyFile = input("probability file name: ( e.g. probability.npy) ")
     elif mode == 1:
         utility.encode(block_size, imagePath, encodedFile, probabiltyFile, float_type)
     utility.decode(block_size, rows, columns, probabiltyFile, encodedFile, resultImage)
