@@ -18,7 +18,7 @@ There is two options for user to use this program:
 
 #### **consoleUser.py** modes:
 ------------
-There is three modes and the user will asked to choose one from them after running **consoleUser.py**
+There is three modes and the user will be asked to choose one from them after running **consoleUser.py**
 1. Encode then Decode the same files
 2. Encode only
 3. Decode only
@@ -26,10 +26,14 @@ There is three modes and the user will asked to choose one from them after runni
 #### The program input:
 ------------
 1. Encoding:
+	- Block size (e.g. 4)
+	- Float type (e.g. float64)
 	- Image name (e.g. test.png)
 	- Output encoded file name (e.g. encoded.npy)
 	- Output probability file name (e.g. probability.npy)
 2. Decoding:
+	- Input encoded file name (e.g. encoded.npy)
+	- Input probability file name (e.g. probability.npy)
 	- Width of the original image in pixels (e.g. 256)
 	- Height of the original image in pixels (e.g. 256)
 	- Output image name (e.g. result.png)
