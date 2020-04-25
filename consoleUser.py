@@ -5,7 +5,7 @@ def main():
 
     ########################################### ENCODING ##########################################################
 
-    mode = int(input("please choose mode:\n1.Encode then Decode the same files\n3.Encode only\n3.Decode only\n"))
+    mode = int(input("please choose mode:\n1.Encode then Decode the same files\n2.Encode only\n3.Decode only\n"))
     block_size = int(input("Block Size = (4 is recommended) "))
 
     if mode != 3:
